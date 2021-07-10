@@ -1,0 +1,6 @@
+[book]
+authors = ["therealansh"]
+language = "en"
+multilingual = false
+src = "src"
+title = "The Awesome fxlang Book"
