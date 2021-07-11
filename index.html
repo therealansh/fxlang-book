@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="fxlang.html">The fx Programming Language</a></li><li class="chapter-item expanded affix "><a href="intro.html">Introduction</a></li><li class="chapter-item expanded "><a href="getting_started.html"><strong aria-hidden="true">1.</strong> Getting Started</a></li><li class="chapter-item expanded "><a href="calc.html"><strong aria-hidden="true">2.</strong> Programming a Calculator</a></li><li class="chapter-item expanded "><a href="concepts.html"><strong aria-hidden="true">3.</strong> Common Concepts</a></li><li class="chapter-item expanded "><a href="core.html"><strong aria-hidden="true">4.</strong> Understanding fxlang</a></li><li class="chapter-item expanded "><a href="funcs.html"><strong aria-hidden="true">5.</strong> Using Functions</a></li><li class="chapter-item expanded "><a href="oops.html"><strong aria-hidden="true">6.</strong> Getting Started with OOPS</a></li><li class="chapter-item expanded "><a href="vm.html"><strong aria-hidden="true">7.</strong> The fx VM</a></li><li class="chapter-item expanded "><a href="appendix.html"><strong aria-hidden="true">8.</strong> Appendix</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="fxlang.html">The fx Programming Language</a></li><li class="chapter-item expanded "><a href="getting_started.html"><strong aria-hidden="true">1.</strong> Getting Started</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="hello-world.html"><strong aria-hidden="true">1.2.</strong> Hello, World</a></li></ol></li><li class="chapter-item expanded "><a href="core.html"><strong aria-hidden="true">2.</strong> Understanding fxlang</a></li><li class="chapter-item expanded "><a href="calc.html"><strong aria-hidden="true">3.</strong> Programming a Calculator</a></li><li class="chapter-item expanded "><a href="concepts.html"><strong aria-hidden="true">4.</strong> Common Concepts</a></li><li class="chapter-item expanded "><a href="funcs.html"><strong aria-hidden="true">5.</strong> Using Functions</a></li><li class="chapter-item expanded "><a href="oops.html"><strong aria-hidden="true">6.</strong> Getting Started with OOPS</a></li><li class="chapter-item expanded "><a href="vm.html"><strong aria-hidden="true">7.</strong> The fx VM</a></li><li class="chapter-item expanded "><a href="appendix.html"><strong aria-hidden="true">8.</strong> Appendix</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -117,7 +117,10 @@
                                                 <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                                                                        
+                                                                        <a href="https://github.com/therealansh/fxlang" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                                                
                     </div>
                 </div>
 
@@ -144,13 +147,33 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="the-fxlang-programming-language"><a class="header" href="#the-fxlang-programming-language">The f(x)lang Programming Language</a></h1>
+<p>Welcome to <em>The Awesome fxlang Book</em>, an introductory book about fxlang. The fxlang helps you write faster, more reliable software High-level ergonomics and low-level control are often at odds in programming language design; Rust challenges that conflict. Through balancing powerful technical capacity and a great developer experience, fxlang gives you the option to control low-level details (such as memory usage) without all the hassle traditionally associated with such control.</p>
+<h2 id="who-fxlang-is-for"><a class="header" href="#who-fxlang-is-for">Who fxlang is for?</a></h2>
+<p>fxlang is ideal for many people for a variety of reasons. Let’s look at a few of the most important groups.</p>
+<h3 id="teams-of-developers"><a class="header" href="#teams-of-developers">Teams of Developers</a></h3>
+<p>fx is proving to be a productive tool for collabrating among large teams of developers. with varying levels of systems programming knowledge. Low-level code is prone to a variety of subtle bugs, which in most other languages can be caught only through extensive testing and careful code review by experienced developers. In fx, the compiler plays a gatekeeper role by refusing to compile code with these elusive bugs, including concurrency bugs. By working alongside the compiler, the team can spend their time focusing on the program’s logic rather than chasing down bugs. </p>
+<h3 id="students"><a class="header" href="#students">Students</a></h3>
+<p>fx is for students and those who are interested in learning and devloping systems or product based applications. fx being a new language is still in dev stage. The community is very welcoming and happy to answer any questions. Through efforts such as this book, the fx team want to make some core concepts more accessible to more people, especially those new to programming.</p>
+<h3 id="open-source-developers"><a class="header" href="#open-source-developers">Open Source Developers</a></h3>
+<p>fx is for people who want to build the Rust programming language, community, developer tools, and libraries. We’d love to have you contribute to the fx language.</p>
+<h3 id="source-code"><a class="header" href="#source-code">Source Code</a></h3>
+<p>The source files from which this book is generated can be found on <a href="https://github.com/therealansh/fxlang-book">Github</a></p>
+<h3 id="changelog"><a class="header" href="#changelog">Changelog</a></h3>
+<p>All notable changes to this project will be documented down here.</p>
+<h3 id="a-hrefhttpsgithubcomtherealanshfxlanggit001aa---11-7-2021"><a class="header" href="#a-hrefhttpsgithubcomtherealanshfxlanggit001aa---11-7-2021"><a href="https://github.com/therealansh/fxlang.git">0.0.1a</a> - 11-7-2021</a></h3>
+<h4 id="added"><a class="header" href="#added">Added</a></h4>
+<ul>
+<li>New book in repo</li>
+<li>Hosted on GH-pages with a basic workflow</li>
+<li>Introduction Section</li>
+</ul>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                                                    <a rel="next" href="intro.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                                    <a rel="next" href="getting_started.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -161,7 +184,7 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                                    <a rel="next" href="intro.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                    <a rel="next" href="getting_started.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                             </nav>
