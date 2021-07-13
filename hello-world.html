@@ -147,6 +147,40 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="hello-world"><a class="header" href="#hello-world">Hello, World</a></h1>
+<p>Now that f(x) is up and running, it's time to write our very first program in fxlang. It's a tradtion to start a new language with printing <code>Hello, World!</code> to the standard output. </p>
+<blockquote>
+<p>Note: fxlang is still in dev stage. Much of it consists of basic grammar from <code>Crafting Interpreters</code> and is just a toy interpreter for now. I'll try to give some more time to it to rewrite in a better &quot;rusty&quot; manner. Also, there is no Language Server Protocol(LSP) yet so features like autocomplete and syntax highlighting is not on the roadmap yet.</p>
+</blockquote>
+<h2 id="creating-a-script-file"><a class="header" href="#creating-a-script-file">Creating a Script File</a></h2>
+<p>We'll start off by making a <code>.fx</code> file to write the fx code. fxlang files always end with <code>.fx</code>. Choose a directory of your own choice. Here I'll show an creating an example file and writing the code in it.</p>
+<p>Open a terminal and enter the following commands to make a <code>.fx</code> file.</p>
+<pre><code class="language-console">$ touch helloWorld.fx
+$ vim helloWorld.fx
+</code></pre>
+<p>I use Vim editor, you can use any editor you like(VSCode, Atom etc). </p>
+<blockquote>
+<p>Notice, we use lowerCamelCase as the standard to write fx code.</p>
+</blockquote>
+<h2 id="writing-and-running-fx-program"><a class="header" href="#writing-and-running-fx-program">Writing and Running fx Program</a></h2>
+<p>Now, in the editor we will write the following code. </p>
+<p><span class="filename">Filename: main.rs</span></p>
+<pre><code class="language-py">print &quot;Hello, World!&quot;;
+</code></pre>
+<p>Save this file and open up the terminal. Enter the following command:</p>
+<pre><code class="language-console">$ fxlang helloWorld.fx
+Hello, World!
+</code></pre>
+<p>Regardless of your OS, the string <code>Hello, World!</code> should print to the terminal. </p>
+<p>Voilà, You have written your first fxlang program. Go add that to your resume - fx programmer.</p>
+<h2 id="deep-dive-into-the-code"><a class="header" href="#deep-dive-into-the-code">Deep Dive into the Code</a></h2>
+<p>f(x) interpreter executes scipts starting at the top of the file, hence it does not require any <code>main()</code> function or an entry point. </p>
+<p>The only line in the file does all the work i.e it prints the string <code>Hello, World!</code> to the standard output. There are a few things to notice here,</p>
+<p>Firstly, <code>print</code> is a <em>Native IO</em> function implemented alongside the core of the interpreter. </p>
+<p>In addition to it, you see <code>&quot;Hello, World!&quot;</code> string. We pass the string as an arguement to <code>print</code>, and the string is printed to the screen.</p>
+<p>Lastly, we end the line with semicolon <code>;</code> , which marks the end of expression and for this particular file marks the EOF. Every statement in fxlang ends with a semicolon.</p>
+<p>Like other dynamic languages such as Ruby, Python or JS, fxlang is also an interpreted language and does not require to generate a compiled binary. Hence, we see the output directly on the stdout.</p>
+<h2 id="try-more-out-of-print-function"><a class="header" href="#try-more-out-of-print-function">Try more out of <code>print</code> function</a></h2>
+<p>To explore more, try printing out a sum of 2 numbers for example, <code>(1+1)</code>. [HINT] I already gave one. </p>
 
                     </main>
 
