@@ -1,6 +1,6 @@
 # The f(x)lang Programming Language
 
-Welcome to _The Awesome fxlang Book_, an introductory book about fxlang. The fxlang helps you write faster, more reliable software High-level ergonomics and low-level control are often at odds in programming language design; Rust challenges that conflict. Through balancing powerful technical capacity and a great developer experience, fxlang gives you the option to control low-level details (such as memory usage) without all the hassle traditionally associated with such control.
+Welcome to _The Awesome fxlang Book_, an introductory book about fxlang(called `f of x`).`f(x)` helps you write faster, more reliable software High-level ergonomics and low-level control are often at odds in programming language design; f(x) challenges that conflict. Through balancing powerful technical capacity and a great developer experience, fxlang gives you the option to control low-level details (such as memory usage) without all the hassle traditionally associated with such control.
 
 ## Who fxlang is for?
 
@@ -31,5 +31,12 @@ All notable changes to this project will be documented down here.
 - New book in repo
 - Hosted on GH-pages with a basic workflow
 - Introduction Section
+
+### [0.0.1a] - 13-7-2021
+#### Added
+- Getting Started Section
+- Installation [TODO]
+- Hello, World Program.
+
 
 [0.0.1a]: https://github.com/therealansh/fxlang.git
